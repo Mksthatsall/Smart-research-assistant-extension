@@ -215,9 +215,3 @@ This project is open-source and can be licensed under the **MIT License** (or yo
 
 ---
 
-If you want next level 🚀
-I can also:
-
-* Add **badges (build, license, stars)**
-* Create **demo GIF section**
-* Make it look like a **top GitHub project README** 😎
