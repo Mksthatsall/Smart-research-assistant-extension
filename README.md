@@ -1,4 +1,3 @@
-Here’s a clean, polished **GitHub-ready README.md** you can directly copy 👇
 
 ---
 
