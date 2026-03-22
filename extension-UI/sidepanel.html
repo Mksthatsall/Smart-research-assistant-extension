@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Research Assistant</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">AI Side Panel</p>
+        <h1>Smart Research Assistant</h1>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="composer-card">
+        <label class="section-label" for="selectedTextPreview">Selected Text</label>
+        <div id="selectionStatus" class="selection-status selection-status-empty">No selection captured yet.</div>
+        <div id="selectedTextPreview" class="selected-text-preview">
+          <p class="placeholder">Select text on the webpage, then open the side panel.</p>
+        </div>
+        <div id="researchStatus" class="research-status">New research mode</div>
+
+        <label class="save-toggle" for="saveHistoryToggle">
+          <input id="saveHistoryToggle" type="checkbox" checked>
+          <span>Save this response to history</span>
+        </label>
+
+        <div class="actions">
+          <button id="newResearchBtn" class="btn btn-secondary">New Research</button>
+          <button id="researchBtn" class="btn btn-primary">Summarize</button>
+          <button id="clearBtn" class="btn btn-secondary">Clear</button>
+        </div>
+      </section>
+
+      <section class="response-card">
+        <div class="response-header">
+          <span class="section-label">Response</span>
+          <div id="loader" class="loader hidden">Thinking...</div>
+        </div>
+        <textarea id="responseEditor" class="response-editor" placeholder="Your AI research result will appear here."></textarea>
+        <div class="response-actions">
+          <button id="saveEditBtn" class="btn btn-secondary">Save Edit</button>
+        </div>
+        <div class="thread-header">
+          <span class="section-label">Saved Summaries In This Research</span>
+        </div>
+        <div id="threadList" class="thread-list">
+          <p class="history-empty">No saved summaries in this research yet.</p>
+        </div>
+      </section>
+
+      <section class="history-card">
+        <div class="history-header">
+          <span class="section-label">Recent Searches</span>
+          <button id="clearHistoryBtn" class="text-button">Clear History</button>
+        </div>
+        <div id="historyList" class="history-list">
+          <p class="history-empty">No recent searches yet.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
